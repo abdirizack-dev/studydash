@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>StudyDash</title>
+    <meta name="description" content="Your student dashboard — courses, assignments, focus timer, and grades." />
+
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#3B5BFD" />
+
+    <!-- iOS home-screen support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="StudyDash" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="icon" href="/icon-192.png" />
+    <script type="module" crossorigin src="/assets/index-CEeh1R1K.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CFuKBM5J.css">
+  </head>
+  <body style="margin:0">
+    <div id="root"></div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js").catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>
